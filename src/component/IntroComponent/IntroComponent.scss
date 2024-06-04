@@ -1,0 +1,69 @@
+.intro-container {
+  .row {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .content-intro-left {
+      background: url("../../Assets/images/satomi-jin.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      // border: 1px solid #000;
+    }
+    .content-intro-right {
+      background-color: rgba($color: #fff, $alpha: 0.7);
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: none;
+      .title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .content {
+        font-size: 1.2rem;
+        text-align: justify;
+        font-weight: 600;
+      }
+      .get-started {
+        margin-top: 2rem;
+        text-align: center;
+        .btn-stated {
+          color: var(--color--font-1);
+          background-color: var(--color--bg-3);
+          font-size: 1.5rem;
+          transition: all 0.3s linear;
+          &:hover {
+            transform: scale(1.2);
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1rem;
+
+    .row {
+      .content-intro-left {
+        height: 25vh;
+      }
+      .content-intro-right {
+        .title {
+          font-size: 1.2rem;
+        }
+        .content {
+          font-size: 1rem;
+        }
+        .get-started {
+          .btn-stated {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

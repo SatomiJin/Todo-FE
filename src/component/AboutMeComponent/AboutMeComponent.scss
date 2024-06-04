@@ -1,0 +1,136 @@
+.about-me-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  .row {
+    background-color: var(--color--font-1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    border-radius: 1rem;
+    .about-me-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .avatar {
+        background-image: url("../../Assets/images/satomi-jin-avatar.jpg");
+        background-size: cover;
+        height: 50vh;
+        width: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: borderRadiusAnimation 10s infinite;
+        border: 3px solid #000;
+      }
+    }
+    .content {
+      padding: 1rem;
+      .title {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .intro {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        i {
+          color: #000;
+          font-size: 3rem;
+          transition: all 0.3s linear;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+      }
+      .portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        .btn-portfolio {
+          padding: 0.5rem;
+          border: 1px solid var(--color--bg-1);
+          position: relative; /* Cho phép định vị con */
+          z-index: 1;
+          font-size: 1.2rem;
+          transition: all 0.5s linear;
+          i {
+            font-size: 1.5rem;
+          }
+          &:hover {
+            transform: scale(1.2);
+            font-weight: 700;
+            color: var(--color--font-1);
+          }
+        }
+        .btn-portfolio::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: var(--color--bg-1);
+          opacity: 0;
+          z-index: -1;
+          transition: all 0.5s ease;
+        }
+        .btn:hover::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 53% 47% 42% 58% / 46% 49% 51% 54%;
+  }
+  25% {
+    border-radius: 64% 36% 58% 42% / 29% 61% 39% 71%;
+  }
+  50% {
+    border-radius: 72% 28% 82% 18% / 12% 69% 31% 88%;
+  }
+  75% {
+    border-radius: 75% 25% 74% 26% / 18% 78% 22% 82%;
+  }
+  90% {
+    border-radius: 35% 65% 38% 62% / 59% 35% 65% 41%;
+  }
+  100% {
+    border-radius: 53% 47% 42% 58% / 46% 49% 51% 54%;
+  }
+}
+
+// media
+@media (max-width: 768px) {
+  .about-me-container {
+    // width: 80%;
+    .row {
+      .about-me-image {
+        .avatar {
+          width: 30vh;
+          height: 30vh;
+        }
+      }
+      .content {
+        .intro {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.default-layout-page {
+  height: 100vh;
+  .header-user-layout {
+  }
+  .children {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .default-layout-page {
+    .children {
+      padding-bottom: 10vh;
+    }
+  }
+}

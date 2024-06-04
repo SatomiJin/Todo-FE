@@ -1,0 +1,47 @@
+.mobile-table-container {
+  .mobile-table {
+    background-color: var(--color--font-1);
+    border-radius: 1rem !important;
+    padding: 0.1rem;
+    .btn-download-xlsx {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    .table-hover {
+      thead {
+        tr {
+          th {
+            font-weight: 700;
+            padding: 0.5rem;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td,
+          th {
+            padding: 0.5rem;
+          }
+          th {
+            font-weight: 700;
+            white-space: nowrap; /* Ngăn việc xuống dòng */
+            overflow: hidden; /* Ẩn phần vượt quá */
+            text-overflow: ellipsis;
+          }
+          .btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+          }
+          .no-data {
+            font-size: 1.5rem;
+            i {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

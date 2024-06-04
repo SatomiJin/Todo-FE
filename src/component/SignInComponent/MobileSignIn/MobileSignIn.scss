@@ -1,0 +1,41 @@
+.mobile-sign-in-container {
+  .mobile-sign-in-form {
+    width: 75vw;
+    padding: 10px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    .row {
+      .form-control {
+        margin-bottom: 10px;
+      }
+      .mobile-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .btn-mobile-container {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .sign-up-container {
+        font-weight: 700;
+        margin-top: 10px;
+        text-align: center;
+        .sign-up {
+          font-weight: 700;
+          color: var(--color--bg-1);
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

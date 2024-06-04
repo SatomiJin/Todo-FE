@@ -1,0 +1,21 @@
+.general-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    .row {
+      .count-info-container {
+        display: flex;
+        gap: 2rem;
+      }
+      .chart-container {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+      }
+    }
+  }
+}

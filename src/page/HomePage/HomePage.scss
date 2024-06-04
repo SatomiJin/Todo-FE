@@ -1,0 +1,19 @@
+.home-page-container {
+  background-color: var(--color--bg-2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  .container {
+    .row {
+      .intro-home-container {
+        width: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page-container {
+  }
+}

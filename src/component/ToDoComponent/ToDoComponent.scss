@@ -1,0 +1,53 @@
+.todo-component-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  width: 60vw;
+  min-height: 65vh;
+  height: fit-content;
+
+  background-color: var(--color--font-1);
+  padding: 1rem;
+  .row {
+    .add-todo {
+      text-align: center;
+      .btn-add-todo {
+        // border: 2px solid var(--color--bg-3);
+        background-color: var(--color--bg-1);
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--color--font-1);
+        i {
+          font-size: 1.5rem;
+        }
+        &:hover {
+          animation: buttonHover 0.3s linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+// media
+@media (max-width: 768px) {
+  .todo-component-container {
+    width: 80vw !important;
+  }
+}

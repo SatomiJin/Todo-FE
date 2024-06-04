@@ -1,0 +1,21 @@
+.add-todo-modal-container {
+  .modal-header {
+    .modal-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  .row {
+    .form-group {
+      text-align: start;
+      input {
+        border: 2px solid var(--color--bg-1);
+      }
+      .desc {
+        height: 20vh;
+      }
+    }
+  }
+}

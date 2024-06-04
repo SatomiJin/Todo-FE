@@ -1,0 +1,15 @@
+.todo-page-container {
+  background-color: var(--color--bg-2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .todo-page-container {
+    .todo-wrapper {
+      width: 90%;
+    }
+  }
+}

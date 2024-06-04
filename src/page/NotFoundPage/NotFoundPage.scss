@@ -1,0 +1,34 @@
+.not-found-page-container {
+  background-color: var(--color--bg-2);
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .row {
+      background-color: var(--color--font-1);
+      width: fit-content;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      .not-found {
+        text-align: center;
+        .text {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .btn-info {
+          margin-top: 1rem;
+          font-size: 1.3rem;
+          font-weight: 700;
+          background-color: var(--color--bg-1);
+          color: var(--color--font-1);
+          i {
+            font-size: 1.5remw;
+          }
+        }
+      }
+    }
+  }
+}
