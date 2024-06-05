@@ -81,6 +81,10 @@ function SignInPage() {
         }
       }
     }
+    if (data && data.status === "ERROR") {
+      setIsLoading(false);
+      toast.error("Đăng nhập thất bại! vui lòng thử lại");
+    }
   }, [data]);
   return (
     <div className="sign-in-container">
