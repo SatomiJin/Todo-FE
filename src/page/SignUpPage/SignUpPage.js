@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import LoadingComponent from "../../component/LoadingComponent/LoadingComponent";
 import { useMutationHook } from "../../Hook/useMutationHook";
 import * as UserService from "../../Service/UserService";
 import "./SignUpPage.scss";
@@ -66,6 +66,7 @@ function SignUpPage() {
   }, [data]);
   return (
     <div className="sign-up-page-container">
+      {isLoading === true && <LoadingComponent />}
       <form className="sign-up-form container" onSubmit={(e) => handleSignUp(e)}>
         <div className="title">Đăng ký ngay</div>
         <div className="row">
