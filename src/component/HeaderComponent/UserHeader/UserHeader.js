@@ -42,8 +42,14 @@ function UserHeader() {
               ></div>
 
               <ul className="dropdown-menu" aria-labelledby="userOption">
-                <li className="dropdown-item">Thông tin cá nhân</li>
-                <li className="dropdown-item">Quản lý hệ thống</li>
+                <li className="dropdown-item" onClick={() => navigate("/profile")}>
+                  Thông tin cá nhân
+                </li>
+                {user && user.role === "R1" && (
+                  <li className="dropdown-item" onClick={() => navigate("/admin")}>
+                    Quản lý hệ thống
+                  </li>
+                )}
               </ul>
             </li>
             <li className="menu-item col-2">
