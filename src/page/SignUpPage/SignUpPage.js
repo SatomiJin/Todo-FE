@@ -32,6 +32,7 @@ function SignUpPage() {
     if (signUpInfo.password !== signUpInfo.confirmPassword) {
       toast.error("Mật khẩu và nhập lại mật khấu không trùng khớp");
     } else {
+      setIsLoading(true);
       await mutation.mutate({
         email: signUpInfo?.email,
         password: signUpInfo?.password,
@@ -56,8 +57,8 @@ function SignUpPage() {
   useEffect(() => {
     if (data && data.status === "OK") {
       toast.success("Đăng ký thành công!!");
-      resetState();
       setIsLoading(false);
+      resetState();
     }
     if (data && data.status === "ERROR") {
       toast.error("Đăng ký không thành công!!");
