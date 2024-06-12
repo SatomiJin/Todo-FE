@@ -33,7 +33,7 @@ function AboutMeComponent() {
                   Portfolio của tôi <i className="fa-solid fa-arrow-right"></i>
                 </button>
               </a>
-              <a href="https://portfolio.satomijin.id.vn/" download="DongHuuTrong_CV.pdf">
+              <a href="../../Assets/CV/DongHuuTrong_CV (1).pdf" download="DongHuuTrong_CV.pdf">
                 <button type="button" className="btn-portfolio btn">
                   <i class="fa-solid fa-cloud-arrow-down"></i> Tải xuống CV
                 </button>
